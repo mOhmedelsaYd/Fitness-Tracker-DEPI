@@ -1,0 +1,35 @@
+/* src/App.css */
+
+/* Basic reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  /* Set a consistent font across the app */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Set a light background for the entire app */
+    color: #333; /* Default text color */
+  }
+  
+  /* Center the main app content */
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the App takes at least full viewport height */
+  }
+  
+  /* Optional: Add some general styles for links */
+  a {
+    color: #28a745; /* Match the button color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

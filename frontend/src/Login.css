@@ -1,0 +1,53 @@
+/* src/Login.css */
+body {
+    background-image: url("C:\Users\yehia\OneDrive\Desktop\D.E.P.I React web dev\Fitness-Tracker-DEPI-main\frontend\client\src\utils\images\0ccb9d7e09881c8ec3498c143d4b784e.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+.login-container {
+    position: relative;
+    right: 500px;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
