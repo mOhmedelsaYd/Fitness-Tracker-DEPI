@@ -1,9 +1,10 @@
-import bodyParser from "body-parser";
-import express from "express";
-import dotenv from "dotenv";
-import { dbConnection } from "./config/database.js";
-import userRoute from "./routes/authRoute.js";
-import cors from "cors";
+const bodyParser = require('body-parser')
+const express  = require("express");
+const dotenv = require("dotenv");
+const  dbConnection =  require("./config/database");
+const userRoute = require("./routes/authRoute");
+dotenv.config({ path: './config.env' })
+const morgan = require('morgan');
 
 const app = express();
 dotenv.config();
@@ -12,10 +13,12 @@ dotenv.config();
 dbConnection();
 
 // Middleware
-app.use(cors());
-app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use("/api/auth", userRoute);
 
-export default app;
+
+
+
+module.exports = app;
