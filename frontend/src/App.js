@@ -1,12 +1,13 @@
 import React from 'react';
 import './index.css';
+import { Outlet } from 'react-router-dom';
 import NavBar from './components/navBar';
-import Signin from './Pages/Signin';
+
 function App() {
   return (
     <>
     <NavBar />
-    <Signin />
+    <Outlet />
     </>
      
   );
